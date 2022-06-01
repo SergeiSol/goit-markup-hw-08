@@ -1,0 +1,28 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+    background-color: var(--primary-white-color)
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list-link {
+    list-style: none;
+    padding: 0 32px;
+    margin-bottom: 30px;
+    display: flex;
+}

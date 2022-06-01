@@ -1,0 +1,67 @@
+.work-list .work-item:last-child {
+    margin-right: 0px;
+}
+
+.work-item::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 102px;
+    padding-left: 102px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 30px;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/studio/antenna-1.png);
+}
+
+.icon-clock::before {
+    background-image: url(../images/studio/clock-2.png);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/studio/diagram-3.png);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/studio/astronaut-4.png);
+}
+
+.work-list {
+    display: flex;
+    padding-right: 40px;
+    width: 1170px;
+    padding: 0px;
+}
+
+.work-subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-text-color)
+}
+
+.work-sub {
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color)
+}
+ .work-desc {
+     font-size: 16px;
+     line-height: 1.18;
+     color: var(--primary-text-color)
+ }
+
+ .work-deskription {
+     width: 270px;
+     font-size: 14px;
+     color: var(--primary-text-color)
+ }

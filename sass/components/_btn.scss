@@ -1,0 +1,57 @@
+.button {
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border: none;
+    padding: 10px 32px;
+    border-radius: 4px;
+    min-width: 130px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn {
+    padding-bottom: 200px;
+}
+.email__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+    margin-top: 45px;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
+.btn-submit {
+    margin-left: 125px;
+    margin-right: 123px;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-click {
+    width: 89px;
+    height: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
