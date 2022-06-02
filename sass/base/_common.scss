@@ -7,8 +7,8 @@ body {
     background-color: var(--primary-white-color)
 }
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .link {
@@ -25,4 +25,15 @@ body {
     padding: 0 32px;
     margin-bottom: 30px;
     display: flex;
+    @media screen and (min-width:480px) {
+            padding-left: 110px;
+        }
+                @media screen and (min-width:768px) {
+                   padding-left: 65px;
+        
+                }
+                                @media screen and (min-width:1200px) {
+                                    padding: 0;
+                                    padding-left: 30px;
+                                }
 }

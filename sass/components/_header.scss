@@ -6,25 +6,97 @@
 }
 
 .menu {
-    display: flex;
-    margin: 0px;
-    padding-left: 94px;
-    align-items: center;
- &__item {
-            margin-right: 30px;
+    @media screen and (max-width:767px) {
+        display: none;
+
+    }
+
+    @media screen and (min-width:768px) {
+            display: flex;
+                margin: 0px;
+                padding-left: 94px;
+                align-items: center;
+            
+                &__item {
+                    margin-right: 30px;
+                }
+            
+                &__link {
+                    position: relative;
+                    margin-bottom: 100px;
+                    color: var(--primary-text-color)
+                }
+    
         }
-&__link {
-    position: relative;
-    margin-bottom: 100px;
-    color: var(--primary-text-color)
 }
 
+
+.navi__link {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 32px;
+    padding-left: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #212121;
+
 }
+.cont {
+    display: block;
+    margin-top: 302px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.cont-mail__link {
+    
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        padding-top: 32px;
+        color: #757575;
+}
+.cont-tel__link {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        
+        color: #2196F3;
+}
+.contacts-menu {
+    
+    
+    @media screen and (max-width:769px) {
+          display: none;
+
+    }
+    @media screen and (min-width:768px) {
+            display: block;
+            padding-left: 55px;
+        }
+                @media screen and (min-width:1200px) {
+                   display: flex;
+                   
+                   margin-left: 230px;
+                }
+}
+
 .menu .menu__item:last-child {
     margin-right: 0px;
 }
 
 .navigation {
+    align-items: center;
     display: flex;
 }
 .active::after {
@@ -40,7 +112,10 @@
     background: #2196F3;
     border-radius: 2px;
     opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width:1200px) {
+            top: 38px;
+        }
 }
 
 .menu__link:hover,
@@ -78,4 +153,76 @@ address {
 .icon-smartphone {
     margin-right: 10px;
     fill: currentColor;
+}
+
+.menu-button {
+    overflow: scroll;
+    display: inline-flex;
+    padding-left: 257px;
+    padding-bottom: 25px;
+    padding-top: 22px;
+    z-index: 2;
+    border: none;
+    background-color: transparent;
+    @media screen and (min-width:768px) {
+            display: none;
+            
+    
+        }
+}
+.menu-button .icon-menu {
+    display: none;
+}
+.menu-button.is-open .icon-cross {
+    display: none;
+    
+}
+.menu-button.is-open .icon-menu {
+    display: block;
+}
+.menu-conteiner {
+    
+    @media screen and (max-width:767px) {
+            height: 796px;
+                background-color: #fff;
+                padding: 20px;
+                text-align: center;
+                font-size: 20px;
+                z-index: 1;
+                &.is-open {
+                    position: fixed;
+                    display: block;
+                    top: 0;
+                    border: none;
+                    overflow-y: scroll;
+                    
+            
+                }
+        }
+    
+        @media screen and (max-width:767px) {
+            display: none;
+          
+                top: 100%;
+                left: 0;
+                width: 100%;
+        }
+                @media screen and (min-width:768px) {
+                    display: none;}
+                
+}
+.social-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+    text-align: left;
+}
+.social-ico {
+    padding-right: 20px;
+    font-size: 18px;
+        line-height: 22px;
+    
+        letter-spacing: 0.02em;
+    
+        color: #2196F3;
 }

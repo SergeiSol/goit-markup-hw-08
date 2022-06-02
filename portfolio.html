@@ -29,26 +29,70 @@
     
     
                     <li class="menu__item"><a class="menu__link link" href="./index.html">Контакты</a></li>
-    
-    
                 </ul>
+    
+    
+                <button type="button" class="menu-button " aria-controls="menu-conteiner" data-menu-button>
+                    <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                        <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+                        <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    </svg></button>
+    
+                <div class="menu-conteiner is-open" id="menu-conteiner" data-menu>
+                    <div class="navigation">
+                        <ul class="navi list">
+                            <li class="navi__link current">Студия</li>
+                            <li class="navi__link">Портфолио</li>
+                            <li class="navi__link">Контакты</li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <ul class="cont list">
+                            <li class="cont__item"><a class="cont-tel__link link" href="tel:+380961111111">+38 096 111 11
+                                    11</a></li>
+                            <li class="cont__item"><a class="cont-mail__link link"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <ul class="social-list list">
+                            <li class="social-ico">Instagram</li>
+                            <li class="social-ico">Twitter</li>
+                            <li class="social-ico">Facebook</li>
+                            <li class="social-ico">LinkedIn</li>
+                        </ul>
+                    </div>
+    
+    
+    
+                </div>
+    
+    
+    
+                <div class="contacts">
+                    <ul class="contacts-menu list ">
+    
+                        <li class="menu__item">
+                            <a class="menu__link link" href="mailto:info@devstudio.com"><svg width="16" height="10"
+                                    class="icon-envelope">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>info@devstudio.com</a>
+                        </li>
+    
+                        <li class="menu__item">
+                            <a class="menu__link link" href="tel:+380961111111"><svg width="10" height="16"
+                                    class="icon-smartphone">
+                                    <use href="./images/icons.svg#icon-smartphone"></use>
+                                </svg>+38 096 111 11 11</a>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+                <script src="./js/menu.js"></script>
+    
             </nav>
-            <ul class="menu list ">
     
-                <li class="menu__item">
-                    <a class="menu__link link" href="mailto:info@devstudio.com"><svg width="16" height="10"
-                            class="icon-envelope">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
-    
-                <li class="menu__item">
-                    <a class="menu__link link" href="tel:+380961111111"><svg width="10" height="16" class="icon-smartphone">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11</a>
-                </li>
-    
-            </ul>
         </div>
     </header>
     <main class="conteiner"> 
@@ -66,7 +110,16 @@
         <ul class="flex-list list">
             <li class="flex-item">
                 <div class="flex-top-wrap">
-                <img src="./images/portfolio/img.jpg" alt="Лап Топ" width="370" style="display: block;"/>
+
+                <img class="img" src="./img/projects/project1-354.jpg" alt="Лап Топ" style="display: block;" 
+                srcset="./img/projects/project1-354.jpg  354w,
+                                ./img/projects/project1-354@2x.jpg  708w,
+                                 ./img/projects/project1-370.jpg  370w,
+                                ./img/projects/project1-370@2x.jpg  740w,
+                                ./img/projects/project1-450.jpg  450w,
+                                ./img/projects/project1-450@2x.jpg  900w"
+                                sizes="(min-width:1200px) 354px, (min-width:768px) 370px, (min-width:480px) 450px"/>
+
                 <p class="flex-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -77,7 +130,14 @@
 
             <li class="flex-item">
                 <div class="flex-top-wrap">
-                <img src="./images/portfolio/img-2.jpg" alt="Постер Баскетбол" width="370" style="display: block;"/>
+                <img class="img" src="./img/projects/project2-354.jpg" alt="Постер Баскетбол" style="display: block;"
+                srcset="./img/projects/project2-354.jpg  354w,
+                                ./img/projects/project2-354@2x.jpg  708w,
+                                 ./img/projects/project2-370.jpg  370w,
+                                ./img/projects/project2-370@2x.jpg  740w,
+                                ./img/projects/project2-450.jpg  450w,
+                                ./img/projects/project2-450@2x.jpg  900w"
+                                sizes="(min-width:1200px) 354px, (min-width:768px) 370px, (min-width:480px) 450px"/>
         <p class="flex-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
             позволит посетителю получить
             исчерпывающие сведения о компании или частном лице.</p>
@@ -89,7 +149,14 @@
 
             <li class="flex-item">
                 <div class="flex-top-wrap">
-                    <img src="./images/portfolio/img-3.jpg" alt="Логотип ресторана" width="370" style="display: block;"/>
+                    <img class="img" src="./img/projects/project3-354.jpg" alt="Логотип ресторана" style="display: block;"
+                    srcset="./img/projects/project3-354.jpg  354w,
+                                ./img/projects/project3-354@2x.jpg  708w,
+                                 ./img/projects/project3-370.jpg  370w,
+                                ./img/projects/project3-370@2x.jpg  740w,
+                                ./img/projects/project3-450.jpg  450w,
+                                ./img/projects/project3-450@2x.jpg  900w"
+                                sizes="(min-width:1200px) 354px, (min-width:768px) 370px, (min-width:480px) 450px"/>
             <p class="flex-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                 позволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
@@ -102,7 +169,14 @@
 
             <li class="flex-item">
                 <div class="flex-top-wrap">
-                <img src="./images/portfolio/img-4.jpg" alt="Наушники" width="370" style="display: block;"/>
+                <img class="img" src="./img/projects/project4-354.jpg" alt="Наушники" style="display: block;"
+                srcset="./img/projects/project4-354.jpg  354w,
+                                ./img/projects/project4-354@2x.jpg  708w,
+                                 ./img/projects/project4-370.jpg  370w,
+                                ./img/projects/project4-370@2x.jpg  740w,
+                                ./img/projects/project4-450.jpg  450w,
+                                ./img/projects/project4-450@2x.jpg  900w"
+                                sizes="(min-width:1200px) 354px, (min-width:768px) 370px, (min-width:480px) 450px"/>
             <p class="flex-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                 позволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
@@ -114,7 +188,14 @@
 
             <li class="flex-item">
                 <div class="flex-top-wrap">
-                <img src="./images/portfolio/img-5.jpg" alt="Коробочки" width="370" style="display: block;"/>
+                <img class="img" src="./img/projects/project5-354.jpg" alt="Коробочки" style="display: block;"
+                srcset="./img/projects/project5-354.jpg  354w,
+                                ./img/projects/project5-354@2x.jpg  708w,
+                                 ./img/projects/project5-370.jpg  370w,
+                                ./img/projects/project5-370@2x.jpg  740w,
+                                ./img/projects/project5-450.jpg  450w,
+                                ./img/projects/project5-450@2x.jpg  900w"
+                                sizes="(min-width:1200px) 354px, (min-width:768px) 370px, (min-width:480px) 450px"/>
                 <p class="flex-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
@@ -127,7 +208,14 @@
 
             <li class="flex-item">
                 <div class="flex-top-wrap">
-                <img src="./images/portfolio/img-6.jpg" alt="Монитор" width="370" style="display: block;"/>
+                <img class="img" src="./img/projects/project6-354.jpg" alt="Монитор" style="display: block;"
+                srcset="./img/projects/project6-354.jpg  354w,
+                                ./img/projects/project6-354@2x.jpg  708w,
+                                 ./img/projects/project6-370.jpg  370w,
+                                ./img/projects/project6-370@2x.jpg  740w,
+                                ./img/projects/project6-450.jpg  450w,
+                                ./img/projects/project6-450@2x.jpg  900w"
+                                sizes="(min-width:1200px) 354px, (min-width:768px) 370px, (min-width:480px) 450px"/>
                 <p class="flex-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
@@ -140,7 +228,14 @@
 
             <li class="flex-item">
                 <div class="flex-top-wrap">
-                <img src="./images/portfolio/img-7.jpg" alt="Книга" width="370" style="display: block;"/>
+                <img class="img" src="./img/projects/project7-354.jpg" alt="Книга" style="display: block;"
+                srcset="./img/projects/project7-354.jpg  354w,
+                                ./img/projects/project7-354@2x.jpg  708w,
+                                 ./img/projects/project7-370.jpg  370w,
+                                ./img/projects/project7-370@2x.jpg  740w,
+                                ./img/projects/project7-450.jpg  450w,
+                                ./img/projects/project7-450@2x.jpg  900w"
+                                sizes="(min-width:1200px) 354px, (min-width:768px) 370px, (min-width:480px) 450px"/>
                 <p class="flex-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
@@ -153,7 +248,14 @@
 
             <li class="flex-item">
                 <div class="flex-top-wrap">
-                <img src="./images/portfolio/img-8.jpg" alt="Бирка" width="370" style="display: block;"/>
+                <img class="img" src="./img/projects/project8-354.jpg" alt="Бирка" style="display: block;"
+                srcset="./img/projects/project8-354.jpg  354w,
+                                ./img/projects/project8-354@2x.jpg  708w,
+                                 ./img/projects/project8-370.jpg  370w,
+                                ./img/projects/project8-370@2x.jpg  740w,
+                                ./img/projects/project8-450.jpg  450w,
+                                ./img/projects/project8-450@2x.jpg  900w"
+                                sizes="(min-width:1200px) 354px, (min-width:768px) 370px, (min-width:480px) 450px"/>
                 <p class="flex-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
@@ -165,7 +267,14 @@
 
             <li class="flex-item">
                 <div class="flex-top-wrap">
-                <img src="./images/portfolio/img-9.jpg" alt="Призентация" width="370" style="display: block;"/>
+                <img class="img" src="./img/projects/project9-354.jpg" alt="Призентация" style="display: block;"
+                srcset="./img/projects/project9-354.jpg  354w,
+                                ./img/projects/project9-354@2x.jpg  708w,
+                                 ./img/projects/project9-370.jpg  370w,
+                                ./img/projects/project9-370@2x.jpg  740w,
+                                ./img/projects/project9-450.jpg  450w,
+                                ./img/projects/project9-450@2x.jpg  900w"
+                                sizes="(min-width:1200px) 354px, (min-width:768px) 370px, (min-width:480px) 450px"/>
                 <p class="flex-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
@@ -180,17 +289,18 @@
     </main>
     <footer class="footer">
         <div class="conteiner-footer">
+            <div class="flex-wraper">
             <div class="conteiner-logo-address">
                 <a class="logo logo--invers link" href="./index.html"><span class="accent">Web</span>Studio</a>
     
                 <address class="address">
                     <ul class="address__list list">
-                        <li class="address__item"><a class="address__link link" href="./index.html">г. Киев, пр-т Леси
+                        <li class="address__item"><a class="address__offise__link link" href="./index.html">г. Киев, пр-т Леси
                                 Украинки, 26</a></li>
                         <li class="address__item"><a class="address__link link"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                         <li class="address__item"><a class="address__link link" href="tel:+380961111111">+38 096 111 11
-                                11</a>1</li>
+                                11</a></li>
                     </ul>
             </div>
             <div class="join">
@@ -219,7 +329,7 @@
                         </a></li>
                 </ul>
             </div>
-    
+    </div>
             <div>
             
                 <div class="email">
